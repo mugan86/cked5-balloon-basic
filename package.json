@@ -1,9 +1,13 @@
 {
   "name": "@mugan86/cked5-balloon-basic",
   "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
-  "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "16.3.0",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "description": "A custom CKEditor 5 with basic options.",
+  "version": "16.3.2",
+  "license": "MIT",
+  "main": "./build/ckeditor.js",
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^16.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^12.0.6",
@@ -23,6 +27,7 @@
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "publish": "npm publish --access=public"
   }
 }
